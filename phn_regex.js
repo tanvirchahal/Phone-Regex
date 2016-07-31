@@ -7,8 +7,8 @@ function phn_regex(str){
      * @return {Bool} result
      */
     
-    result = /[^+0-9\s\-()]/.test(str);
+    result = /^[+0-9\s\-()]{6,16}$/.test(str);
     
-    //True if Failure 
+    //False if Failure 
     alert(result);
 }
